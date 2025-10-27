@@ -1,0 +1,92 @@
+:root {
+    --red: #FF4C4C;
+    --blue: #5EB4D6;
+    --green: #5CB85C;
+}
+
+body {
+    background-color:beige;
+    font-family: 'Arial', 'Sans-serif';
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    padding-top: 100px;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+#rock,
+#paper,
+#scissors {
+    border: none;
+    font-size: 3em;
+    border-radius: 10px;
+}
+
+#rock,
+#paper {
+    margin-right: 10px;
+
+}
+
+#rock {
+    background-color: var(--green);
+}
+
+#paper {
+    background-color: var(--blue);
+}
+
+#scissors {
+    background-color: var(--red);
+}
+
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+    opacity: 80%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+#rock:active,
+#paper:active,
+#scissors:active {
+    opacity: 70%;
+}
+
+#player-score {
+    color: var(--blue);
+    margin-right: 10px;
+}
+
+#computer-score {
+    color: var(--red);
+}
+
+.restart {
+    border: none;
+    border-radius: 2px;
+    background-color: goldenrod;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.restart:hover {
+    opacity: 90%;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.restart:active {
+    opacity: 70%;
+}
